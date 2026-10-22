@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Hanken+Grotesk:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <title>Criar conta · CafeteriaMaisAmor</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/login.css">
+    <link rel="stylesheet" href="static/css/cadastro.css">
+</head>
+
+<body>
+    <div class="auth">
+        <div class="box"><a class="logo" href="index.html">Cafeteria<span>MaisAmor</span></a>
+            <h1>Criar conta</h1>
+            <div id="msg" role="alert"></div>
+            <form id="signup-form" novalidate>
+                <div class="f"><label for="nome">Nome completo</label><input id="nome" autocomplete="name">
+                    <div class="hint"></div>
+                </div>
+                <div class="f"><label for="email">E-mail</label><input id="email" type="email" autocomplete="email">
+                    <div class="hint"></div>
+                </div>
+                <div class="f"><label for="telefone">Telefone</label><input id="telefone" type="tel" autocomplete="tel"
+                        placeholder="(11) 91234-5678">
+                    <div class="hint"></div>
+                </div>
+                <div class="f"><label for="senha">Senha</label>
+                    <div class="w"><input id="senha" type="password" autocomplete="new-password"><button type="button"
+                            class="eye">Mostrar</button></div>
+                    <div class="strength"><i></i></div>
+                    <div class="slabel"></div>
+                    <div class="hint"></div>
+                </div>
+                <div class="f"><label for="confirma">Confirmar senha</label>
+                    <div class="w"><input id="confirma" type="password" autocomplete="new-password"><button
+                            type="button" class="eye">Mostrar</button></div>
+                    <div class="hint"></div>
+                </div><button class="btn" type="submit">Criar conta</button>
+            </form>
+            <div class="lnks"><a href="login.html">Já tenho uma conta? Entrar</a></div>
+        </div>
+    </div>
+    <script src="static/js/auth.js"></script>
+</body>
+
+</html>

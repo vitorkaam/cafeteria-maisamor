@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cafeteria Mais Amor | Produtos</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        :root {
+            --marrom: #4b2e24;
+            --marrom-claro: #8b5e3c;
+            --creme: #f8f3ed;
+            --bege: #eadbca;
+            --dourado: #d9a441;
+            --texto: #332320;
+        }
+
+        body {
+            background: var(--creme);
+            color: var(--texto);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar {
+            background: var(--marrom);
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: white !important;
+        }
+
+        .nav-link {
+            margin-left: 15px;
+        }
+
+        .nav-link:hover {
+            color: var(--dourado) !important;
+        }
+
+        .topo {
+            background: linear-gradient(
+                rgba(75,46,36,.75),
+                rgba(75,46,36,.75)
+            ),
+            url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80");
+
+            background-size: cover;
+            background-position: center;
+
+            padding: 100px 20px;
+
+            text-align: center;
+
+            color: white;
+        }
+
+        .topo h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        .titulo {
+            color: var(--marrom);
+            font-weight: bold;
+        }
+
+        .produto {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(75,46,36,.12);
+            height: 100%;
+            transition: .3s;
+        }
+
+        .produto:hover {
+            transform: translateY(-8px);
+        }
+
+        .produto img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .produto-info {
+            padding: 22px;
+        }
+
+        .preco {
+            color: var(--marrom-claro);
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .btn-cafe {
+            background: var(--marrom-claro);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 22px;
+        }
+
+        .btn-cafe:hover {
+            background: var(--marrom);
+            color: white;
+        }
+
+        footer {
+            background: #2c1c16;
+            color: white;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+<!-- MENU -->
+
+<nav class="navbar navbar-expand-lg">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">
+            ☕ Cafeteria Mais Amor
+        </a>
+
+        <button class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="menu">
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="produtos.html">
+                        Produtos
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="historia.html">
+                        Nossa História
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="pedidos.html">
+                        Pedidos
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- TOPO -->
+
+<section class="topo">
+
+    <h1>Nosso Cardápio</h1>
+
+    <p>
+        Escolha seu café e sua delícia favorita.
+    </p>
+
+</section>
+
+
+<!-- PRODUTOS -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="titulo">
+                Cafés
+            </h2>
+
+            <p>
+                Nossos cafés preparados especialmente para você.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- PRODUTO 1 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="produto">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=900&q=80"
+                        alt="Café Latte">
+
+                    <div class="produto-info">
+
+                        <h4>Café Latte</h4>
+
+                        <p>
+                            Espresso com leite cremoso.
+                        </p>
+
+                        <div class="preco">
+                            R$ 12,90
+                        </div>
+
+                        <a href="pedidos.html"
+                            class="btn btn-cafe mt-3">
+                            Pedir
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUTO 2 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="produto">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=900&q=80"
+                        alt="Cappuccino">
+
+                    <div class="produto-info">
+
+                        <h4>Cappuccino</h4>
+
+                        <p>
+                            Café, leite e espuma.
+                        </p>
+
+                        <div class="preco">
+                            R$ 14,90
+                        </div>
+
+                        <a href="pedidos.html"
+                            class="btn btn-cafe mt-3">
+                            Pedir
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUTO 3 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="produto">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80"
+                        alt="Espresso">
+
+                    <div class="produto-info">
+
+                        <h4>Espresso</h4>
+
+                        <p>
+                            Intenso, tradicional e aromático.
+                        </p>
+
+                        <div class="preco">
+                            R$ 8,90
+                        </div>
+
+                        <a href="pedidos.html"
+                            class="btn btn-cafe mt-3">
+                            Pedir
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUTO 4 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="produto">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=80"
+                        alt="Croissant">
+
+                    <div class="produto-info">
+
+                        <h4>Croissant Artesanal</h4>
+
+                        <p>
+                            Crocante por fora e macio por dentro.
+                        </p>
+
+                        <div class="preco">
+                            R$ 10,90
+                        </div>
+
+                        <a href="pedidos.html"
+                            class="btn btn-cafe mt-3">
+                            Pedir
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUTO 5 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="produto">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80"
+                        alt="Doce">
+
+                    <div class="produto-info">
+
+                        <h4>Doce da Casa</h4>
+
+                        <p>
+                            Uma sobremesa especial para acompanhar seu café.
+                        </p>
+
+                        <div class="preco">
+                            R$ 11,90
+                        </div>
+
+                        <a href="pedidos.html"
+                            class="btn btn-cafe mt-3">
+                            Pedir
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUTO 6 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="produto">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80"
+                        alt="Pão artesanal">
+
+                    <div class="produto-info">
+
+                        <h4>Pão Artesanal</h4>
+
+                        <p>
+                            Preparado diariamente com ingredientes selecionados.
+                        </p>
+
+                        <div class="preco">
+                            R$ 9,90
+                        </div>
+
+                        <a href="pedidos.html"
+                            class="btn btn-cafe mt-3">
+                            Pedir
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="py-5">
+
+    <div class="container text-center">
+
+        <h4>☕ Cafeteria Mais Amor</h4>
+
+        <p>
+            Café, carinho e bons momentos.
+        </p>
+
+        <p class="mb-0">
+            © 2026 Cafeteria Mais Amor.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
