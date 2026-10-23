@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cafeteria Mais Amor | Pães</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container nav"><a class="logo" href="index.html">☕ Cafeteria <span>Mais Amor</span></a><button
+                onclick="document.querySelector('.links').classList.toggle('open')"
+                style="display:none;background:none;color:white;border:0;font-size:24px" id="menub">☰</button>
+            <div class="links"><a class="" href="index.html">Home</a><a class="" href="cafe.html">Cafés</a><a
+                    class="active" href="paes.html">Pães & Delícias</a><a class="" href="cadastro.html">Cadastro</a><a
+                    class="" href="login.html">Login</a><a class="" href="admin.html">Administrador</a></div>
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="container">
+            <h1>Pães & Delícias</h1>
+            <p>Perfeitos para acompanhar seu café.</p>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="title">
+                <h2>Produtos da casa</h2>
+            </div>
+            <div class="grid">
+                <article class="card"><img
+                        src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=85"
+                        alt="Croissant">
+                    <div class="card-body">
+                        <h3>Croissant</h3>
+                        <p>Crocante por fora e macio por dentro.</p>
+                        <div class="price">R$ 10,90</div><a class="btn" href="login.html">Fazer pedido</a>
+                    </div>
+                </article>
+                <article class="card"><img
+                        src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=85"
+                        alt="Pão Artesanal">
+                    <div class="card-body">
+                        <h3>Pão Artesanal</h3>
+                        <p>Casca dourada e interior macio.</p>
+                        <div class="price">R$ 9,90</div><a class="btn" href="login.html">Fazer pedido</a>
+                    </div>
+                </article>
+                <article class="card"><img
+                        src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=900&q=85"
+                        alt="Biscoitos">
+                    <div class="card-body">
+                        <h3>Biscoitos</h3>
+                        <p>Crocantes e saborosos.</p>
+                        <div class="price">R$ 7,90</div><a class="btn" href="login.html">Fazer pedido</a>
+                    </div>
+                </article>
+                <article class="card"><img
+                        src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?auto=format&fit=crop&w=900&q=85"
+                        alt="Bolo Caseiro">
+                    <div class="card-body">
+                        <h3>Bolo Caseiro</h3>
+                        <p>Fatia macia e saborosa.</p>
+                        <div class="price">R$ 11,90</div><a class="btn" href="login.html">Fazer pedido</a>
+                    </div>
+                </article>
+                <article class="card"><img
+                        src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=900&q=85"
+                        alt="Pão de Queijo">
+                    <div class="card-body">
+                        <h3>Pão de Queijo</h3>
+                        <p>Clássico brasileiro.</p>
+                        <div class="price">R$ 8,50</div><a class="btn" href="login.html">Fazer pedido</a>
+                    </div>
+                </article>
+                <article class="card"><img
+                        src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=900&q=85"
+                        alt="Doce da Casa">
+                    <div class="card-body">
+                        <h3>Doce da Casa</h3>
+                        <p>Para finalizar seu café.</p>
+                        <div class="price">R$ 9,50</div><a class="btn" href="login.html">Fazer pedido</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div>
+                    <h3>☕ Cafeteria Mais Amor</h3>
+                    <p>Café, carinho e bons momentos.</p>
+                </div>
+                <div>
+                    <h4>Site</h4>
+                    <p><a href="index.html">Home</a><br><a href="cafe.html">Cafés</a><br><a href="paes.html">Pães &
+                            Delícias</a></p>
+                </div>
+                <div>
+                    <h4>Atendimento</h4>
+                    <p>Segunda a sábado<br>8h às 19h</p>
+                </div>
+            </div>
+            <div class="copy">© 2026 Cafeteria Mais Amor</div>
+        </div>
+    </footer>
+    <script>const u = localStorage.getItem('cafeUsuario'); if (u) { document.querySelector('.logo').innerHTML = '☕ Cafeteria <span>Mais Amor</span> · Olá, ' + u + '!' }</script>
+</body>
+
+</html>

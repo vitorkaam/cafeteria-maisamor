@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cafeteria Mais Amor | Cafés</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container nav"><a class="logo" href="index.html">☕ Cafeteria <span>Mais Amor</span></a><button
+                onclick="document.querySelector('.links').classList.toggle('open')"
+                style="display:none;background:none;color:white;border:0;font-size:24px" id="menub">☰</button>
+            <div class="links"><a class="" href="index.html">Home</a><a class="active" href="cafe.html">Cafés</a><a
+                    class="" href="paes.html">Pães & Delícias</a><a class="" href="cadastro.html">Cadastro</a><a
+                    class="" href="login.html">Login</a><a class="" href="admin.html">Administrador</a></div>
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="container">
+            <h1>Nossos Cafés</h1>
+            <p>Escolha sua bebida favorita.</p>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="title">
+                <h2>Cardápio</h2>
+                <p>Preparados para deixar seu momento melhor.</p>
+            </div>
+            <div class="grid">
+                <article class="card"><img
+                        src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=85"
+                        alt="Espresso">
+                    <div class="card-body">
+                        <h3>Espresso</h3>
+                        <p>Intenso e aromático.</p>
+                        <div class="price">R$ 8,90</div><a class="btn" href="login.html">Fazer pedido</a>
+                    </div>
+                </article>
+                <article class="card"><img
+                        src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=900&q=85"
+                        alt="Latte">
+                    <div class="card-body">
+                        <h3>Latte</h3>
+                        <p>Cremoso e suave.</p>
+                        <div class="price">R$ 12,90</div><a class="btn" href="login.html">Fazer pedido</a>
+                    </div>
+                </article>
+                <article class="card"><img
+                        src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=900&q=85"
+                        alt="Cappuccino">
+                    <div class="card-body">
+                        <h3>Cappuccino</h3>
+                        <p>Café, leite e espuma.</p>
+                        <div class="price">R$ 14,90</div><a class="btn" href="login.html">Fazer pedido</a>
+                    </div>
+                </article>
+                <article class="card"><img
+                        src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=85"
+                        alt="Café Gelado">
+                    <div class="card-body">
+                        <h3>Café Gelado</h3>
+                        <p>Refrescante.</p>
+                        <div class="price">R$ 15,90</div><a class="btn" href="login.html">Fazer pedido</a>
+                    </div>
+                </article>
+                <article class="card"><img
+                        src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=900&q=85"
+                        alt="Mocha">
+                    <div class="card-body">
+                        <h3>Mocha</h3>
+                        <p>Café com chocolate.</p>
+                        <div class="price">R$ 16,90</div><a class="btn" href="login.html">Fazer pedido</a>
+                    </div>
+                </article>
+                <article class="card"><img
+                        src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=900&q=85"
+                        alt="Especial">
+                    <div class="card-body">
+                        <h3>Especial</h3>
+                        <p>Para descobrir novos sabores.</p>
+                        <div class="price">R$ 18,90</div><a class="btn" href="login.html">Fazer pedido</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div>
+                    <h3>☕ Cafeteria Mais Amor</h3>
+                    <p>Café, carinho e bons momentos.</p>
+                </div>
+                <div>
+                    <h4>Site</h4>
+                    <p><a href="index.html">Home</a><br><a href="cafe.html">Cafés</a><br><a href="paes.html">Pães &
+                            Delícias</a></p>
+                </div>
+                <div>
+                    <h4>Atendimento</h4>
+                    <p>Segunda a sábado<br>8h às 19h</p>
+                </div>
+            </div>
+            <div class="copy">© 2026 Cafeteria Mais Amor</div>
+        </div>
+    </footer>
+    <script>const u = localStorage.getItem('cafeUsuario'); if (u) { document.querySelector('.logo').innerHTML = '☕ Cafeteria <span>Mais Amor</span> · Olá, ' + u + '!' }</script>
+</body>
+
+</html>

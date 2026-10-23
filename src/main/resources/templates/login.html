@@ -1,314 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Login | Cafeteria Mais Amor</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        body {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background:
-                linear-gradient(rgba(48, 29, 21, 0.72), rgba(48, 29, 21, 0.72)),
-                url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80");
-            background-size: cover;
-            background-position: center;
-            padding: 20px;
-        }
-
-        .login-container {
-            width: 100%;
-            max-width: 430px;
-            background: #fffaf5;
-            border-radius: 22px;
-            padding: 40px;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
-            animation: aparecer 0.7s ease;
-        }
-
-        @keyframes aparecer {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .logo {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .logo .icone {
-            width: 75px;
-            height: 75px;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #4b2e24;
-            color: #fff;
-            border-radius: 50%;
-            font-size: 35px;
-            margin-bottom: 15px;
-        }
-
-        .logo h1 {
-            color: #4b2e24;
-            font-size: 27px;
-            margin-bottom: 7px;
-        }
-
-        .logo p {
-            color: #806b61;
-            font-size: 14px;
-        }
-
-        .campo {
-            margin-bottom: 20px;
-        }
-
-        .campo label {
-            display: block;
-            color: #4b2e24;
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
-
-        .campo input {
-            width: 100%;
-            padding: 14px 15px;
-            border: 1px solid #d8c6b7;
-            border-radius: 10px;
-            outline: none;
-            font-size: 15px;
-            background: #fff;
-            transition: 0.3s;
-        }
-
-        .campo input:focus {
-            border-color: #9b654a;
-            box-shadow: 0 0 0 3px rgba(155, 101, 74, 0.12);
-        }
-
-        .opcoes {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 25px;
-            font-size: 13px;
-        }
-
-        .lembrar {
-            display: flex;
-            align-items: center;
-            gap: 7px;
-            color: #6b5a51;
-        }
-
-        .lembrar input {
-            accent-color: #4b2e24;
-        }
-
-        .esqueci {
-            color: #8b5e48;
-            text-decoration: none;
-        }
-
-        .esqueci:hover {
-            text-decoration: underline;
-        }
-
-        .btn-login {
-            width: 100%;
-            padding: 15px;
-            border: none;
-            border-radius: 10px;
-            background: #4b2e24;
-            color: white;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .btn-login:hover {
-            background: #6f4735;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 18px rgba(75, 46, 36, 0.25);
-        }
-
-        .cadastro {
-            text-align: center;
-            margin-top: 25px;
-            color: #806b61;
-            font-size: 14px;
-        }
-
-        .cadastro a {
-            color: #4b2e24;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        .cadastro a:hover {
-            text-decoration: underline;
-        }
-
-        .voltar {
-            display: block;
-            text-align: center;
-            margin-top: 20px;
-            color: #8b5e48;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        .voltar:hover {
-            text-decoration: underline;
-        }
-
-        #mensagem {
-            display: none;
-            margin-top: 15px;
-            padding: 12px;
-            border-radius: 8px;
-            text-align: center;
-            font-size: 14px;
-            background: #e8f5e9;
-            color: #2e7d32;
-        }
-
-        @media (max-width: 500px) {
-            .login-container {
-                padding: 30px 22px;
-            }
-
-            .logo h1 {
-                font-size: 23px;
-            }
-
-            .opcoes {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 10px;
-            }
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cafeteria Mais Amor | Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <div class="login-container">
-
-        <div class="logo">
-            <div class="icone">☕</div>
-
-            <h1>Cafeteria Mais Amor</h1>
-
-            <p>Entre na sua conta</p>
+    <nav>
+        <div class="container nav"><a class="logo" href="index.html">☕ Cafeteria <span>Mais Amor</span></a><button
+                onclick="document.querySelector('.links').classList.toggle('open')"
+                style="display:none;background:none;color:white;border:0;font-size:24px" id="menub">☰</button>
+            <div class="links"><a class="" href="index.html">Home</a><a class="" href="cafe.html">Cafés</a><a class=""
+                    href="paes.html">Pães & Delícias</a><a class="" href="cadastro.html">Cadastro</a><a class="active"
+                    href="login.html">Login</a><a class="" href="admin.html">Administrador</a></div>
         </div>
-
-        <form id="loginForm">
-
-            <div class="campo">
-                <label for="email">E-mail</label>
-
-                <input
-                    type="email"
-                    id="email"
-                    placeholder="Digite seu e-mail"
-                    required
-                >
-            </div>
-
-            <div class="campo">
-                <label for="senha">Senha</label>
-
-                <input
-                    type="password"
-                    id="senha"
-                    placeholder="Digite sua senha"
-                    required
-                >
-            </div>
-
-            <div class="opcoes">
-
-                <label class="lembrar">
-                    <input type="checkbox">
-                    Lembrar de mim
-                </label>
-
-                <a href="#" class="esqueci">
-                    Esqueci minha senha
-                </a>
-
-            </div>
-
-            <button type="submit" class="btn-login">
-                Entrar
-            </button>
-
-            <div id="mensagem">
-                Login realizado com sucesso!
-            </div>
-
-        </form>
-
-        <div class="cadastro">
-            Ainda não possui uma conta?
-            <a href="cadastro.html">Cadastre-se</a>
+    </nav>
+    <header class="hero">
+        <div class="container">
+            <h1>Login</h1>
+            <p>Entre na sua conta.</p>
         </div>
-
-        <a href="index.html" class="voltar">
-            ← Voltar para a cafeteria
-        </a>
-
-    </div>
-
-    <script>
-
-        const formulario = document.getElementById("loginForm");
-        const mensagem = document.getElementById("mensagem");
-
-        formulario.addEventListener("submit", function(event) {
-
-            event.preventDefault();
-
-            const email = document.getElementById("email").value;
-            const senha = document.getElementById("senha").value;
-
-            if (email && senha) {
-
-                mensagem.style.display = "block";
-
-                setTimeout(() => {
-                    window.location.href = "index.html";
-                }, 1500);
-
-            }
-
-        });
-
-    </script>
-
+    </header>
+    <section>
+        <div class="container">
+            <form class="form" style="max-width:450px" id="f">
+                <div class="title">
+                    <h2>Entrar</h2>
+                </div>
+                <div class="field"><label>E-mail</label><input id="email" type="email" required></div><br>
+                <div class="field"><label>Senha</label><input id="senha" type="password" required></div><br><button
+                    class="btn" style="width:100%">Entrar</button>
+                <div class="msg" id="msg"></div>
+                <p style="text-align:center;margin-top:18px">Não tem conta? <a href="cadastro.html"
+                        style="color:#704936;font-weight:bold">Cadastre-se</a></p>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div>
+                    <h3>☕ Cafeteria Mais Amor</h3>
+                    <p>Café, carinho e bons momentos.</p>
+                </div>
+                <div>
+                    <h4>Site</h4>
+                    <p><a href="index.html">Home</a><br><a href="cafe.html">Cafés</a><br><a href="paes.html">Pães &
+                            Delícias</a></p>
+                </div>
+                <div>
+                    <h4>Atendimento</h4>
+                    <p>Segunda a sábado<br>8h às 19h</p>
+                </div>
+            </div>
+            <div class="copy">© 2026 Cafeteria Mais Amor</div>
+        </div>
+    </footer>
+    <script>const u = localStorage.getItem('cafeUsuario'); if (u) { document.querySelector('.logo').innerHTML = '☕ Cafeteria <span>Mais Amor</span> · Olá, ' + u + '!' } document.getElementById('f').onsubmit = e => { e.preventDefault(); if (email.value === localStorage.getItem('cafeEmail') && senha.value === localStorage.getItem('cafeSenha')) { localStorage.setItem('cafeUsuario', localStorage.getItem('cafeNome')); msg.textContent = 'Login realizado!'; msg.classList.add('show'); setTimeout(() => location = 'index.html', 700) } else { msg.textContent = 'E-mail ou senha incorretos.'; msg.classList.add('show') } }</script>
 </body>
 
 </html>

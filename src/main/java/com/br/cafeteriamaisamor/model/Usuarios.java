@@ -23,8 +23,6 @@ public class Usuarios {
    private Boolean ativo;
 
     //Construtorz
-    public Usuarios(long id,interger registro, String nome, String emaill,);
-
-
 }
+
 
